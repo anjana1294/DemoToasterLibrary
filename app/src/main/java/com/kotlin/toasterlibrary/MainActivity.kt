@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.Toast
+import com.kotlin.anjanalibrary.ShowToast
 
 class MainActivity : AppCompatActivity() {
 
@@ -13,6 +14,8 @@ class MainActivity : AppCompatActivity() {
         var onClick=findViewById(R.id.button) as Button
         onClick.setOnClickListener {
             Toast.makeText(this,"hello,this toast message !",Toast.LENGTH_LONG)
+            ShowToast.show(this,"My library toast");
+
         }
     }
 }

@@ -1,1 +1,1 @@
-include ':app', ':anjanalibrary'
+include ':app', ':anjanalibrary', ':newlibrary'
