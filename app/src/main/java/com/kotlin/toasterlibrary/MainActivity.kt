@@ -11,11 +11,10 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        var onClick=findViewById(R.id.button) as Button
+        val onClick=findViewById(R.id.button) as Button
         onClick.setOnClickListener {
-            Toast.makeText(this,"hello,this toast message !",Toast.LENGTH_LONG)
+            Toast.makeText(this,"hello,this toast message !",Toast.LENGTH_LONG);
             ShowToast.show(this,"My library toast");
-
         }
     }
 }
